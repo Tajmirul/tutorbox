@@ -1,0 +1,48 @@
+.button {
+	font-family: 'Sanchez', serif;
+	display: inline-block;
+
+	&-type-1 {
+		background-color: $color-green;
+		color: $color-white !important;
+		border-radius: 50px;
+		padding: 1.5rem 3rem;
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		overflow: hidden;
+
+		&::after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -1px;
+			bottom: 0;
+			width: 0;
+			border-radius: 50px;
+			background-color: $color-theme;
+			z-index: -1;
+			transition: .2s;
+			// margin: 0 -1px;
+		}
+
+		&:hover::after{
+			width: 102%;
+		}
+	}
+
+	&-type-2{
+		font-size: 1rem;
+		color: $color-white !important;
+		background-color: $color-theme;
+		padding: 3px 1.2rem;
+
+		&:hover{
+			background-color: darken($color-theme, 10);
+		}
+	}
+
+	&-link {
+
+	}
+}

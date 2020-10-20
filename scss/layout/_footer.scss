@@ -1,0 +1,30 @@
+footer{
+    background-color: $color-theme-dark;
+    
+    & *{
+    	color: darken($color-white, 15);
+    }
+
+    .social-links{
+    	a{
+    		height: 2.5rem;
+    		width: 2.5rem;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		color: darken($color-white, 15);
+    		border: 1px solid darken($color-white, 15);
+    		border-radius: 50%;
+    		transition: .3s;
+
+    		&:hover{
+    			background-color: $color-green;
+    			border-color: $color-green;
+
+    			i{
+    				color: $color-theme-dark;
+    			}
+    		}
+    	}
+    }
+}

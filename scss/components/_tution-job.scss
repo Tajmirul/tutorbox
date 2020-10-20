@@ -1,0 +1,16 @@
+.tution-job {
+	position: relative;
+}
+.slider-type-2-arrows{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100% !important;
+	z-index: 1;
+}
+
+.slider-type-2{
+	.slide{
+		padding: 0 .5rem;
+	}
+}

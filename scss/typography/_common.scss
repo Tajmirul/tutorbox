@@ -1,0 +1,91 @@
+// go to top button -------------------------
+.go-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #004e00;
+    color: #fff;
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s;
+    @include flex-center;
+    transform: translateY(2rem);
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        transform: translateY(0rem);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+    }
+}
+
+
+.add{
+    font-size: 2rem;
+    @include flex-center;
+    width: 100%;
+    background: rgba($color-black, .3);
+}
+
+// slider 
+.arrows{
+    z-index: 1;
+    border-radius: 50%;
+    color: $color-theme;
+    font-size: 7rem;
+    cursor: pointer;
+    z-index: 1;
+
+    &.prev{
+        float: left;
+    }
+    &.next{
+        float: right;
+    }
+}
+
+
+ul.main-ul{
+    width: 100%;
+    max-width: 70rem;
+    li{
+        display: block;
+        padding: 1rem 0;
+
+        a{
+            float: left;
+            transition: .3s;
+
+            &:hover{
+                transform: translateX(1rem);
+                color: $color-theme !important;
+            }
+        }
+
+        i{
+            float: right;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+
+        ul{
+            padding: 1rem 2rem;
+            clear: both;
+            // background: rgba($color-black, .07);
+            display: none;
+        }
+    }
+
+}
