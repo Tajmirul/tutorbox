@@ -394,7 +394,7 @@ nav {
   nav .open-navigation {
     cursor: pointer;
     padding: 1rem; }
-  nav ul li a:hover {
+  nav ul li a.active, nav ul li a:hover {
     color: #AECE61 !important; }
   nav .mobile-navigation {
     position: fixed;
@@ -420,7 +420,7 @@ nav {
 .tutor {
   overflow: hidden;
   background-color: #F6F8FA;
-  height: calc(100% - 7rem);
+  height: calc(100% - 8rem);
   position: relative; }
   .tutor .fee {
     text-align: left;
@@ -458,7 +458,7 @@ nav {
     transition: .7s;
     z-index: 2; }
   .tutor:hover .tutor-name {
-    transform: translateY(-7rem); }
+    transform: translateY(-8rem); }
   .tutor:hover::after {
     height: 100%; }
   .tutor:hover::before {

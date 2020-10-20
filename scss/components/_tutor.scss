@@ -1,7 +1,7 @@
 .tutor{
 	overflow: hidden;
 	background-color: #F6F8FA;
-	height: calc(100% - 7rem);
+	height: calc(100% - 8rem);
 	position: relative;
 
 	.fee{
@@ -48,7 +48,7 @@
 
 	&:hover {
 		.tutor-name {
-			transform: translateY(-7rem);
+			transform: translateY(-8rem);
 		}
 
 		&::after{
