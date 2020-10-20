@@ -346,19 +346,19 @@ footer {
 
 .banner {
   position: relative; }
-  .banner .slider-type-1 .slide .banner-content {
+  .banner .slider-type-1 .slide-item .banner-content {
     height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .banner .slider-type-1 .slide .banner-content h2 {
+    .banner .slider-type-1 .slide-item .banner-content h2 {
       font-size: 60px; }
-  .banner .slider-type-1 .slide:nth-child(1) {
+  .banner .slider-type-1 .slick-list .slick-track .slick-slide:not(.slick-cloned):nth-child(2) .slide-item {
     background-image: url("../img/slide1.jpg"); }
-  .banner .slider-type-1 .slide:nth-child(2) {
+  .banner .slider-type-1 .slick-list .slick-track .slick-slide:not(.slick-cloned):nth-child(3) .slide-item {
     background-image: url("../img/slide2.jpg"); }
-  .banner .slider-type-1 .slide:nth-child(3) {
+  .banner .slider-type-1 .slick-list .slick-track .slick-slide:not(.slick-cloned):nth-child(4) .slide-item {
     background-image: url("../img/slide3.jpg"); }
   .banner .slider-dots {
     position: absolute;
