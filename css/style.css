@@ -223,33 +223,6 @@ section {
 .font-sanchez {
   font-family: 'Sanchez', serif !important; }
 
-.go-to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: #004e00;
-  color: #fff;
-  font-size: 3rem;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all .2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(2rem);
-  visibility: hidden;
-  opacity: 0; }
-  .go-to-top.active {
-    transform: translateY(0rem);
-    visibility: visible;
-    opacity: 1; }
-  .go-to-top:hover {
-    transform: translateY(-4px); }
-  .go-to-top:active {
-    transform: translateY(-2px); }
-
 .add {
   font-size: 2rem;
   display: flex;
@@ -290,6 +263,34 @@ ul.main-ul {
       padding: 1rem 2rem;
       clear: both;
       display: none; }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(24, 62, 100, 0.98);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .preloader-inner {
+    height: 5rem;
+    width: 5rem;
+    border: 3px solid #AECE61;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: preloader 1s linear infinite; }
+
+@keyframes preloader {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.section-name h2 .text-theme {
+  border-bottom: 4px solid #AECE61; }
 
 footer {
   background-color: #092746; }
@@ -383,7 +384,6 @@ footer {
       clear: both; }
 
 nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   padding: 1rem 0 !important;
   position: fixed !important;
   top: 0;
@@ -393,7 +393,7 @@ nav {
   transition: .3s; }
   nav .open-navigation {
     cursor: pointer;
-    padding: 1rem; }
+    padding: 2.5rem; }
   nav ul li a.active, nav ul li a:hover {
     color: #AECE61 !important; }
   nav .mobile-navigation {
@@ -477,6 +477,13 @@ nav {
 .slider-type-2 .slide {
   padding: 0 .5rem; }
 
+.all-counters {
+  background-color: #183E64;
+  padding: 3rem 2rem;
+  border-radius: 30px; }
+  .all-counters * {
+    color: #fff; }
+
 @media (max-width: 767.98px) {
   .slider-type-2-arrows .arrows.prev {
     margin-left: -2rem; }
@@ -495,3 +502,12 @@ nav {
 @media (max-width: 432px) {
   .banner-content {
     align-items: unset !important; } }
+
+@media (min-width: 768px) {
+  .all-counter img {
+    margin-top: -4rem; } }
+
+@media (min-width: 1200px) {
+  .all-counters img {
+    position: relative;
+    transform: translateY(-20%); } }

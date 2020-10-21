@@ -1,0 +1,9 @@
+.all-counters{
+	background-color: $color-theme;
+    padding: 3rem 2rem;
+    border-radius: 30px;
+
+	& * {
+		color: $color-white;
+	}
+}

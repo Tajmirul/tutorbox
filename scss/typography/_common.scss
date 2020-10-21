@@ -1,35 +1,35 @@
 // go to top button -------------------------
-.go-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background-color: #004e00;
-    color: #fff;
-    font-size: 3rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all .2s;
-    @include flex-center;
-    transform: translateY(2rem);
-    visibility: hidden;
-    opacity: 0;
+// .go-to-top {
+//     position: fixed;
+//     bottom: 2rem;
+//     right: 2rem;
+//     background-color: #004e00;
+//     color: #fff;
+//     font-size: 3rem;
+//     width: 4rem;
+//     height: 4rem;
+//     border-radius: 50%;
+//     cursor: pointer;
+//     transition: all .2s;
+//     @include flex-center;
+//     transform: translateY(2rem);
+//     visibility: hidden;
+//     opacity: 0;
 
-    &.active {
-        transform: translateY(0rem);
-        visibility: visible;
-        opacity: 1;
-    }
+//     &.active {
+//         transform: translateY(0rem);
+//         visibility: visible;
+//         opacity: 1;
+//     }
 
-    &:hover {
-        transform: translateY(-4px);
-    }
+//     &:hover {
+//         transform: translateY(-4px);
+//     }
 
-    &:active {
-        transform: translateY(-2px);
-    }
-}
+//     &:active {
+//         transform: translateY(-2px);
+//     }
+// }
 
 
 .add{
@@ -83,9 +83,47 @@ ul.main-ul{
         ul{
             padding: 1rem 2rem;
             clear: both;
-            // background: rgba($color-black, .07);
             display: none;
         }
     }
+}
 
+.preloader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba($color-theme, .98);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-inner{
+        height: 5rem;
+        width: 5rem;
+        border: 3px solid $color-green;
+        border-bottom-color: transparent;
+        // border-right-color: transparent;
+        border-radius: 50%;
+        animation: preloader 1s linear infinite;
+    }
+}
+
+@keyframes preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.section-name{
+    h2{
+        .text-theme{
+            border-bottom: 4px solid $color-green;
+        }
+    }
 }
