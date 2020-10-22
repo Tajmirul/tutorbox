@@ -638,12 +638,19 @@ nav {
   color: #fff !important;
   background-color: #438bd2 !important; }
 
+.update-profile .tab-container {
+  position: relative; }
+  .update-profile .tab-container .tab-content {
+    display: none; }
+    .update-profile .tab-container .tab-content:first-child {
+      display: block; }
+
 .update-profile form .profile-img-upload {
   display: block; }
 
-.update-profile .profile-img {
+.update-profile .profile-img, .update-profile .image-upload {
   position: relative; }
-  .update-profile .profile-img div {
+  .update-profile .profile-img div, .update-profile .image-upload div {
     position: absolute;
     top: 0;
     left: 0;
@@ -656,15 +663,16 @@ nav {
     font-size: 3rem;
     opacity: 0;
     transition: .3s; }
-    .update-profile .profile-img div i.plus-icon {
+    .update-profile .profile-img div i.plus-icon, .update-profile .image-upload div i.plus-icon {
       background-color: #fff;
       border-radius: 50%;
       height: 5rem;
       width: 5rem;
       display: flex;
       align-items: center;
+      cursor: pointer;
       justify-content: center; }
-  .update-profile .profile-img:hover > div {
+  .update-profile .profile-img:hover > div, .update-profile .image-upload:hover > div {
     opacity: 1; }
 
 @media (max-width: 767.98px) {

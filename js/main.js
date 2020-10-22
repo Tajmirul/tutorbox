@@ -92,7 +92,7 @@ $(document).ready(function () {
 
     // bootstrap tooltip ---------------------
     $('[data-toggle="tooltip"]').tooltip({
-        trigger: 'hover',
+        trigger: 'hover'
     });
 
 
@@ -109,15 +109,19 @@ $(document).ready(function () {
 
         tabContainer.children('.tab-content').stop().fadeOut(400, function() {
             $(ID).stop().fadeIn(600);
-        })
+        });
 
         event.preventDefault();
     });
 
-    // 
-    $('.profile-img .plus-icon').click(function() {
-        $('.profile-img-upload').click();
+    // image upload ---------------------------
+    $('.image-upload').find('.a_plus-icon').click(function(event) {
+
+        $($(this).attr('href')).click();
+        event.preventDefault();
+
     });
+
 
 
     // preloader ------------------------

@@ -114,7 +114,14 @@
 	}
 
 	.tab-container{
+		position: relative;
+
 		.tab-content {
+			display: none;
+
+			&:first-child{
+				display: block;
+			}
 		}
 	}
 
@@ -124,7 +131,7 @@
 		}
 	}
 
-	.profile-img{
+	.profile-img, .image-upload{
 		position: relative;
 
 		div{
@@ -148,6 +155,7 @@
 				width: 5rem;
 				display: flex;
 				align-items: center;
+				cursor: pointer;
 				justify-content: center;
 			}
 		}

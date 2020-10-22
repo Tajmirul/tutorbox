@@ -11,7 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home - TutorBox</title>
+    <title>User Dashboard - TutorBox</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="login">
+<body class="user-dashboard">
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif] -->
@@ -51,7 +51,7 @@
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="find-a-tutor.html">FIND A TUTOR</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="tution-job.html">TUTION JOB</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="registration.html">REGISTER AS A TUTOR</a></li>
-                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4 active" href="login.html">LOG IN</a></li>
+                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="login.html">LOG IN</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,38 +72,53 @@
     </header>
     <!-- end of header -->
 
-
     <main class="mt-150 mb-50">
-        <div class="container">
-            <section class="border rounded registration-section p-5">
-                    <div class="text-center mb-5">
-                        <h2>Log in your account!</h2>
-                        <p class="fz-large">Fill all forms to log in.</p>
-                        <div class="row">
-                            <div class="col-md-4 mx-auto">
-                                <div class="bg-theme d-flex align-items-center justify-content-center flex-column py-3 box-container">
-                                    <div class="icon fz-extra-large">
-                                        <i class="icofont-user text-green"></i>
-                                    </div>
-                                    <p class="fz-large text-white text-center m-0">Log In Form</p>
-                                </div>
-                            </div>
+        <div class="container-fluid">
+            <section class="find-a-tutor-section pt-0">
+                <div class="row">
+                    <!-- sidebar --------------------------------------------------------------------- -->
+                    <div class="col-12 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-people"></i></span>
+                                <span class="text">TUTOR ID : TS-14664</span>
+                            </a>
+                            <a href="user-dashboard.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-dashboard-web"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <a href="#" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-notification"></i></span>
+                                <span class="text">Notification</span>
+                            </a>
+                            <a href="profile.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-user"></i></span>
+                                <span class="text">View Profile</span>
+                            </a>
+                            <a href="update-profile.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-pencil"></i></span>
+                                <span class="text">Update Profile</span>
+                            </a>
+                            <a href="balance.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-money-bag"></i></span>
+                                <span class="text">Balance</span>
+                            </a>
+                            <a href="security.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-lock"></i></span>
+                                <span class="text">Security</span>
+                            </a>
                         </div>
-                        <!-- end of row -->
                     </div>
+                    <!-- end of col -->
+                    <!-- main content --------------------------------------------------------------------- -->
+                    <div class="col-12 col-sm-7 col-md-8 col-lg-9 col-xl-10">
+                        <h3 class="mb-5">My Balance</h3>
 
-                    <form action="#" method="POST" class="login_form">
-                        <div class="form-group">
-                            <label for="user_name" class="d-block fz-normal">User Name: <span class="text-danger fz-extra-large">*</span></label>
-                            <input type="text" name="user_name" id="user_name" class="form-control h-auto fz-normal ">
-                        </div>
-                        <div class="form-group">
-                            <label for="password" class="d-block fz-normal">Password: <span class="text-danger fz-extra-large">*</span></label>
-                            <input type="text" name="password" id="password" class="form-control h-auto fz-normal ">
-                        </div>
-                        <button type="button" class="button button-type-2 fz-normal py-2 px-4">LOG IN</button>
-                    </form>
-                    <!-- end of registration form -->
+                        <p class="alert alert-primary fz-normal">Available Balance: BDT 0</p>
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
             </section>
             <!-- end of registration section -->
         </div>

@@ -48,7 +48,7 @@
                 <div class="d-none d-lg-block float-right py-4">
                     <ul class="ml-auto d-flex">
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="index.html">HOME</a></li>
-                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4 active" href="find-a-tutor.html">FIND A TUTOR</a></li>
+                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="find-a-tutor.html">FIND A TUTOR</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="tution-job.html">TUTION JOB</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="registration.html">REGISTER AS A TUTOR</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="login.html">LOG IN</a></li>
@@ -113,52 +113,52 @@
                     <!-- main content --------------------------------------------------------------------- -->
                     <div class="col-12 col-md-8 col-lg-9 col-xl-10">
                         <div class="update-profile">
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="flex-column rounded tab-pane bg-theme">
-                                        <a class="text-center d-block py-5 px-5 fz-extra-large active" data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Personal Informations </p>" href="#personal_info" ><i class="icofont-users-alt-4"></i></a>
-                                        <a class="text-center d-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Educational Informations </p>"  href="#education_info" ><i class="icofont-education"></i></a>
-                                        <a class="text-center d-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Tution Informations </p>"  href="#tution_info" ><i class="icofont-teacher"></i></a>
-                                        <a class="text-center d-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Account Validation </p>"  href="#account_verification" ><i class="icofont-verification-check"></i></a>
+                            <div class="row mt-5 mt-md-0">
+                                <div class="col-12 col-md-auto">
+                                    <div class="d-flex justify-content-around d-md-block flex-row flex-lg-column rounded tab-pane bg-theme">
+                                        <a class="text-center d-inline-block d-md-block py-5 px-5 fz-extra-large active" data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Personal Informations </p>" href="#personal_info" ><i class="icofont-users-alt-4"></i></a>
+                                        <a class="text-center d-inline-block d-md-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Educational Informations </p>"  href="#education_info" ><i class="icofont-education"></i></a>
+                                        <a class="text-center d-inline-block d-md-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Tution Informations </p>"  href="#tution_info" ><i class="icofont-teacher"></i></a>
+                                        <a class="text-center d-inline-block d-md-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Account Validation </p>"  href="#account_verification" ><i class="icofont-verification-check"></i></a>
                                     </div>                                
                                 </div>
                                 <!-- end of col -->
-                                <div class="col">
+                                <div class="col mt-5 mt-md-0">
                                     <div class="tab-container">
                                         <div id="personal_info" class="tab-content">
                                             <div class="row">
                                                 <div class="col-auto">
-                                                    <div class="profile-img">
+                                                    <div class="profile-img image-upload">
                                                         <img src="img/niloy.png" title="Click to update profile image" alt="Profile Image" class="w-100">
-                                                        <div><a href="#"><i class="icofont-plus plus-icon"></i></a></div>
+                                                        <div><a href="#profile-img" class="a_plus-icon"><i class="icofont-plus plus-icon"></i></a></div>
                                                     </div>
                                                 </div>
                                                 <!-- end of col -->
-                                                <div class="col">
+                                                <div class="col-lg-12 mt-5 mt-xl-0">
                                                     <form class="update-form">
-                                                        <input type="file" accept="*image" class="d-none profile-img-upload">
+                                                        <input type="file" accept="*image" id="profile-img" class="d-none profile-img-upload">
                                                         <div class="row">
-                                                            <div class="form-group col-md-6">
+                                                            <div class="form-group col-12 col-lg-6">
                                                                 <label for="first_name">First Name</label>
                                                                 <input type="text" name="first_name" id="first_name" class="form-control h-auto fz-normal py-3 px-4" required="required">
                                                             </div>
                                                             <!-- end of col -->
-                                                            <div class="form-group col-md-6">
+                                                            <div class="form-group col-12 col-lg-6">
                                                                 <label for="last_name">Last Name</label>
                                                                 <input type="text" name="last_name" id="last_name" class="form-control h-auto fz-normal py-3 px-4" required="required">
                                                             </div>
                                                             <!-- end of col -->
-                                                            <div class="form-group col-md-6">
+                                                            <div class="form-group col-12 col-lg-6">
                                                                 <label for="number">Number</label>
                                                                 <input type="number" name="number" id="number" class="form-control h-auto fz-normal py-3 px-4" required="required">
                                                             </div>
                                                             <!-- end of col -->
-                                                            <div class="form-group col-md-6">
+                                                            <div class="form-group col-12 col-lg-6">
                                                                 <label for="email">Email</label>
                                                                 <input type="email" name="email" id="email" class="form-control h-auto fz-normal py-3 px-4" required="required">
                                                             </div>
                                                             <!-- end of col -->
-                                                            <div class="form-group col-md-6">
+                                                            <div class="form-group col-12 col-lg-6">
                                                                 <label for="current_institute">Your Current Institute</label>
                                                                 <input type="text" name="current_institute" id="current_institute" class="form-control h-auto fz-normal py-3 px-4" required="required">
                                                             </div>
@@ -207,22 +207,22 @@
                                                 <div class="ssc-info">
                                                     <h4 class="mb-4 mt-50">SSC Informations</h4>
                                                     <div class="row">
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="ssc_year">Year</label>
                                                             <input type="number" id="ssc_year" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="ssc_institute">Institute</label>
                                                             <input type="text" id="ssc_institute" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="ssc_group">Group</label>
                                                             <input type="text" id="ssc_group" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="ssc_gpa">GPA</label>
                                                             <input type="number" id="ssc_gpa" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
@@ -235,22 +235,22 @@
                                                 <div class="hsc-info">
                                                     <h4 class="mb-4 mt-50">HSC Informations</h4>
                                                     <div class="row">
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="hsc_year">Year</label>
                                                             <input type="number" id="hsc_year" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="hsc_institute">Institute</label>
                                                             <input type="text" id="hsc_institute" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="hsc_group">Group</label>
                                                             <input type="text" id="hsc_group" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="hsc_gpa">GPA</label>
                                                             <input type="number" id="hsc_gpa" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
@@ -263,22 +263,22 @@
                                                 <div class="honours-info">
                                                     <h4 class="mb-4 mt-50">Honours Informations</h4>
                                                     <div class="row">
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="honours_year">Year</label>
                                                             <input type="number" id="honours_year" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="honours_institute">Institute</label>
                                                             <input type="text" id="honours_institute" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="honours_group">Group</label>
                                                             <input type="text" id="honours_group" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
                                                         <!-- end of col -->
-                                                        <div class="col-md-6 form-group">
+                                                        <div class="col-12 col-lg-6 form-group">
                                                             <label for="honours_gpa">GPA</label>
                                                             <input type="number" id="honours_gpa" class="form-control fz-normal h-auto py-3 px-4">
                                                         </div>
@@ -296,19 +296,147 @@
                                              <h3 class="mb-5">Tution Informations - </h3>
                                              <form action="" method="POST">
                                                  <div class="row">
-                                                     <div class="col-md-4"><p class="mb-0 fz-normal">Select provide tuition districts</p></div>
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Select provide tuition districts :</p></div>
                                                      <div class="col-md-8">
                                                          <select name="district" class="select2">
-                                                             <option value="">Dhaka</option>
+                                                            <option value="">Select District</option>
+                                                            <option value="">Dhaka</option>
+                                                            <option value="">Narsingdi</option>
+                                                            <option value="">Monohardi</option>
+                                                            <option value="">Madhushal</option>
                                                          </select>
                                                      </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Preferred Area for tuition (You can pick 10 highest):</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" name="states[]" multiple="multiple" class="select2">
+                                                            <option value="">Dhaka</option>
+                                                            <option value="">Narsingdi</option>
+                                                            <option value="">Monohardi</option>
+                                                            <option value="">Madhushal</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Preferred Subjects (1st one will be Major Sub):</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" name="states[]" multiple="multiple" class="select2">
+                                                            <option value="">ICT</option>
+                                                            <option value="">Math</option>
+                                                            <option value="">Physics</option>
+                                                            <option value="">General Science</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Preferred Medium:</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" name="states[]" multiple="multiple" class="select2">
+                                                            <option value="">Bangla</option>
+                                                            <option value="">English</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Preferred Classes:</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" name="states[]" multiple="multiple" class="select2">
+                                                            <option value="">Kung Fu</option>
+                                                            <option value="">English</option>
+                                                            <option value="">Bangla</option>
+                                                            <option value="">Yoga</option>
+                                                            <option value="">Cooking</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Days Per Week:</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" name="states[]" multiple="multiple" class="select2">
+                                                            <option value="">1 Day/Week</option>
+                                                            <option value="">2 Day/Week</option>
+                                                            <option value="">3 Day/Week</option>
+                                                            <option value="">4 Day/Week</option>
+                                                            <option value="">5 Day/Week</option>
+                                                            <option value="">6 Day/Week</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Timing Shift:</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" name="states[]" multiple="multiple" class="select2">
+                                                            <option value="">Morning</option>
+                                                            <option value="">Afternoon</option>
+                                                            <option value="">Evening</option>
+                                                            <option value="">Night</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Expected Salary:</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" class="select2">
+                                                            <option value=""></option>
+                                                            <option value="">2500 TK/month</option>
+                                                            <option value="">2000 TK/month</option>
+                                                            <option value="">1500 TK/month</option>
+                                                            <option value="">1000 TK/month</option>
+                                                            <option value="">500 TK/month</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Expected Salary:</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" name="states[]" multiple="multiple" class="select2">
+                                                            <option value=""></option>
+                                                            <option value="">Group Tution</option>
+                                                            <option value="">Private Tution</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Tuition experience:</p></div>
+                                                     <div class="col-md-8">
+                                                         <textarea name="experience" rows="8" class="form-control "></textarea>
+                                                     </div>
+                                                 </div>
+                                                 <div class="row mt-4">
+                                                     <div class="col-12"><button type="submit" class="button button-type-2 fz-normal py-3 px-5 float-right">UPDATE</button></div>
                                                  </div>
                                              </form>
                                         </div>
                                         <!-- end of tution_info -->
 
                                         <div id="account_verification" class="tab-content">
-
+                                            <form action="#" method="POST">
+                                                <div class="row">
+                                                    <div class="col-lg-6 my-5 my-md-0 image-upload">
+                                                        <input type="file" accept="*image" id="nid_card" class="d-none">
+                                                        <img src="img/nid_card.jpg" alt="NID card" class="w-100">
+                                                        <div><a href="#nid_card" class="a_plus-icon"><i class="icofont-plus plus-icon"></i></a></div>
+                                                    </div>
+                                                    <div class="col-lg-6 my-5 my-md-5 my-lg-0 image-upload">
+                                                        <input type="file" accept="*image" id="student_id" class="d-none">
+                                                        <img src="img/student_id.jpg" alt="Student card" class="w-100">
+                                                        <div><a href="#student_id" class="a_plus-icon"><i class="icofont-plus plus-icon"></i></a></div>
+                                                    </div>
+                                                    <div class="col-12 my-5">
+                                                        <button type="submit" class="button button-type-2 fz-normal py-3 px-5">UPDATE</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                         <!-- end of account_verification -->
                                     </div>
