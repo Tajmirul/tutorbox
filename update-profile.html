@@ -1,0 +1,388 @@
+<!-- 
+    Starter pack for scss 
+    Made By:    Tajmirul Islam Akhand 
+    contact:    tasmirolislam@gmail.com
+    facebook:   https://facebook.com/akhand.tajmirul
+-->
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Update Profile - TutorBox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ALL CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="fonts/icofont.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="user-dashboard">
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif] -->
+
+    <!-- <div class="go-to-top"><i class="icofont-rounded-up"></i></div> -->
+    <!-- go to top button -->
+    <div class="preloader"><div class="preloader-inner"></div></div>
+    <!-- end of preloader -->
+
+    <header>
+        <nav id="nav" class="bg-theme">
+            <div class="container">
+                <a class="fz-extra-large text-white d-inline-block py-3" href="index.html"><img src="img/logo.png" alt="Logo"></a>
+                <p class="m-0 fz-normal d-inline-block float-right text-white d-block d-lg-none open-navigation"><i class="icofont-navigation-menu"></i></p>
+                <div class="d-none d-lg-block float-right py-4">
+                    <ul class="ml-auto d-flex">
+                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="index.html">HOME</a></li>
+                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4 active" href="find-a-tutor.html">FIND A TUTOR</a></li>
+                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="tution-job.html">TUTION JOB</a></li>
+                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="registration.html">REGISTER AS A TUTOR</a></li>
+                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="login.html">LOG IN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end of container -->
+            <div class="mobile-navigation d-lg-none">
+                <ul class="navbar-nav ml-auto">
+                    <li class="close-navigation"> <a href="#" class="fz-normal text-white px-4 py-4"><i class="icofont-close"></i></a></li>
+                    <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="index.html">HOME <span class="sr-only">(current)</span></a></li>
+                    <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="find-a-tutor.html">FIND A TUTOR</a></li>
+                    <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="tution-job.html">TUTION JOB</a></li>
+                    <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="registration.html">REGISTER AS A TUTOR</a></li>
+                    <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="login.html">LOG IN</a></li>
+                </ul>
+            </div>
+            <!-- end of mobile navigation -->
+        </nav>
+        <!-- end of nav -->
+    </header>
+    <!-- end of header -->
+
+    <main class="mt-150 mb-50">
+        <div class="container-fluid">
+            <section class="find-a-tutor-section pt-0">
+                <div class="row">
+                    <!-- sidebar --------------------------------------------------------------------- -->
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-people"></i></span>
+                                <span class="text">TUTOR ID : TS-14664</span>
+                            </a>
+                            <a href="user-dashboard.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-dashboard-web"></i></span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                            <a href="#" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-notification"></i></span>
+                                <span class="text">Notification</span>
+                            </a>
+                            <a href="profile.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-user"></i></span>
+                                <span class="text">View Profile</span>
+                            </a>
+                            <a href="update-profile.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-pencil"></i></span>
+                                <span class="text">Update Profile</span>
+                            </a>
+                            <a href="balance.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-money-bag"></i></span>
+                                <span class="text">Balance</span>
+                            </a>
+                            <a href="security.html" class="list-group-item fz-normal py-3">
+                                <span class="icon mr-3"><i class="icofont-lock"></i></span>
+                                <span class="text">Security</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end of col -->
+                    <!-- main content --------------------------------------------------------------------- -->
+                    <div class="col-12 col-md-8 col-lg-9 col-xl-10">
+                        <div class="update-profile">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="flex-column rounded tab-pane bg-theme">
+                                        <a class="text-center d-block py-5 px-5 fz-extra-large active" data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Personal Informations </p>" href="#personal_info" ><i class="icofont-users-alt-4"></i></a>
+                                        <a class="text-center d-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Educational Informations </p>"  href="#education_info" ><i class="icofont-education"></i></a>
+                                        <a class="text-center d-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Tution Informations </p>"  href="#tution_info" ><i class="icofont-teacher"></i></a>
+                                        <a class="text-center d-block py-5 px-5 fz-extra-large"        data-toggle="tooltip" data-placement="right" data-html="true" title="<p class='fz-normal mb-0 px-3 py-2 text-light'> Account Validation </p>"  href="#account_verification" ><i class="icofont-verification-check"></i></a>
+                                    </div>                                
+                                </div>
+                                <!-- end of col -->
+                                <div class="col">
+                                    <div class="tab-container">
+                                        <div id="personal_info" class="tab-content">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <div class="profile-img">
+                                                        <img src="img/niloy.png" title="Click to update profile image" alt="Profile Image" class="w-100">
+                                                        <div><a href="#"><i class="icofont-plus plus-icon"></i></a></div>
+                                                    </div>
+                                                </div>
+                                                <!-- end of col -->
+                                                <div class="col">
+                                                    <form class="update-form">
+                                                        <input type="file" accept="*image" class="d-none profile-img-upload">
+                                                        <div class="row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="first_name">First Name</label>
+                                                                <input type="text" name="first_name" id="first_name" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-md-6">
+                                                                <label for="last_name">Last Name</label>
+                                                                <input type="text" name="last_name" id="last_name" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-md-6">
+                                                                <label for="number">Number</label>
+                                                                <input type="number" name="number" id="number" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-md-6">
+                                                                <label for="email">Email</label>
+                                                                <input type="email" name="email" id="email" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-md-6">
+                                                                <label for="current_institute">Your Current Institute</label>
+                                                                <input type="text" name="current_institute" id="current_institute" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-12 col-lg-6">
+                                                                <label for="study_subject">Name of the Subject you are studing on</label>
+                                                                <input type="text" name="study-subject" id="study_subject" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-12 col-lg-6">
+                                                                <label for="background_medium">Background Medium</label>
+                                                                <input type="text" name="background_medium" id="background_medium" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-12 col-lg-6">
+                                                                <label for="present_location">Your Present Location</label>
+                                                                <input type="text" name="present_location" id="present_location" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-12">
+                                                                <label for="parmanent_location">Your Parmanent Location</label>
+                                                                <input type="text" name="parmanent_location" id="parmanent_location" class="form-control h-auto fz-normal py-3 px-4" required="required">
+                                                            </div>
+                                                            <!-- end of col -->
+                                                            <div class="form-group col-12">
+                                                                <label for="about_you">About Your Self</label>
+                                                                <textarea name="about_you" id="about_you" rows="5" class="form-control h-auto fz-normal py-3 px-4"></textarea>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <button type="submit" class="button button-type-2 fz-normal py-3 px-5">UPDATE</button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end of row -->
+                                                    </form>
+                                                </div>
+                                                <!-- end of col -->
+                                            </div>
+                                            <!-- end of row -->
+                                        </div>
+                                        <!-- end of personal_info -->
+
+                                        <div id="education_info" class="tab-content">
+                                            <h3 class="mb-5">Educational Informations - </h3>
+                                            <form action="#" method="POST">
+
+                                                <div class="ssc-info">
+                                                    <h4 class="mb-4 mt-50">SSC Informations</h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="ssc_year">Year</label>
+                                                            <input type="number" id="ssc_year" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="ssc_institute">Institute</label>
+                                                            <input type="text" id="ssc_institute" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="ssc_group">Group</label>
+                                                            <input type="text" id="ssc_group" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="ssc_gpa">GPA</label>
+                                                            <input type="number" id="ssc_gpa" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                    </div>
+                                                    <!-- end of row -->
+                                                </div>
+                                                <!-- end of ssc info -->
+
+                                                <div class="hsc-info">
+                                                    <h4 class="mb-4 mt-50">HSC Informations</h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="hsc_year">Year</label>
+                                                            <input type="number" id="hsc_year" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="hsc_institute">Institute</label>
+                                                            <input type="text" id="hsc_institute" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="hsc_group">Group</label>
+                                                            <input type="text" id="hsc_group" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="hsc_gpa">GPA</label>
+                                                            <input type="number" id="hsc_gpa" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                    </div>
+                                                    <!-- end of row -->
+                                                </div>
+                                                <!-- end of hsc info -->
+
+                                                <div class="honours-info">
+                                                    <h4 class="mb-4 mt-50">Honours Informations</h4>
+                                                    <div class="row">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="honours_year">Year</label>
+                                                            <input type="number" id="honours_year" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="honours_institute">Institute</label>
+                                                            <input type="text" id="honours_institute" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="honours_group">Group</label>
+                                                            <input type="text" id="honours_group" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="honours_gpa">GPA</label>
+                                                            <input type="number" id="honours_gpa" class="form-control fz-normal h-auto py-3 px-4">
+                                                        </div>
+                                                        <!-- end of col -->
+                                                    </div>
+                                                    <!-- end of row -->
+                                                </div>
+                                                <!-- end of honours info -->
+                                                <button type="submit" class="button button-type-2 fz-normal py-3 px-5">UPDATE</button>
+                                            </form>
+                                        </div>
+                                        <!-- end of education_info -->
+                                        
+                                        <div id="tution_info" class="tab-content">
+                                             <h3 class="mb-5">Tution Informations - </h3>
+                                             <form action="" method="POST">
+                                                 <div class="row">
+                                                     <div class="col-md-4"><p class="mb-0 fz-normal">Select provide tuition districts</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="district" class="select2">
+                                                             <option value="">Dhaka</option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                             </form>
+                                        </div>
+                                        <!-- end of tution_info -->
+
+                                        <div id="account_verification" class="tab-content">
+
+                                        </div>
+                                        <!-- end of account_verification -->
+                                    </div>
+                                </div>
+                                <!-- end of col -->
+                            </div>
+                            <!-- end of row -->
+                        </div>
+                        <!-- end of dashboard container -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </section>
+            <!-- end of registration section -->
+        </div>
+    </main>
+    <!-- end of main -->
+
+    <footer class="py-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="logo fz-large mb-5"><img src="img/logo.png" alt="Footer Logo"></div>
+                    <p class="about-us fz-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae aliquid nihil ratione quas eius, vel perspiciatis quod incidunt voluptatibus libero.</p>
+                </div>
+                <!-- end of col -->
+                <div class="col-md-3">
+                    <h4 class="mb-5">Quick Links</h4>
+                    <div class="clearfix">
+                        <ul class="d-inline-block float-left">
+                            <li><a href="#" class="fz-normal">About Us</a></li>
+                            <li><a href="#" class="fz-normal">Our News</a></li>
+                            <li><a href="#" class="fz-normal">Contact Us</a></li>
+                        </ul>
+                        <ul class="d-inline-block float-right">
+                            <li><a href="#" class="fz-normal">Become a Tutor</a></li>
+                            <li><a href="#" class="fz-normal">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of col -->
+                <div class="col-md-3">
+                    <h4 class="mb-5">Our Contact</h4>
+                    <p class="fz-small mb-0"><span class="mr-2"><i class="text-green icofont-location-pin"></i></span> 350 Avenue, New York, NY 10001</p>
+                    <p class="fz-small mb-0"><span class="mr-2"><i class="text-green icofont-envelope"></i></span> abc@example.com</p>
+                    <p class="fz-small"><span class="mr-2"><i class="text-green icofont-phone"></i></span> +880 1842 12345</p>
+                    <div class="social-links">
+                        <ul>
+                            <li class="d-inline-block mr-3"><a href="#" class="fz-small"><i class="icofont-facebook"></i></a></li>
+                            <li class="d-inline-block mr-3"><a href="#" class="fz-small"><i class="icofont-twitter"></i></a></li>
+                            <li class="d-inline-block mr-3"><a href="#" class="fz-small"><i class="icofont-instagram"></i></a></li>
+                            <li class="d-inline-block mr-3"><a href="#" class="fz-small"><i class="icofont-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </footer>
+    <!-- end of footer -->
+
+
+    <!-- ALL JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

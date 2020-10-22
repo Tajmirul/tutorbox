@@ -1,0 +1,161 @@
+.user-dashboard{
+	background-color: #EFF4F8;
+
+	.notification{
+		background-color: $color-white;
+	}
+}
+
+.dashboard-container {
+
+	.row > div {
+		&:nth-child(1) .box {
+			background-color: #4D9CDF;
+		}
+		&:nth-child(2) .box {
+			background-color: #9139DB;
+		}
+		&:nth-child(3) .box {
+			background-color: #DDDF4D;
+		}
+		&:nth-child(4) .box {
+			background-color: #DB6739;
+		}
+		&:nth-child(5) .box {
+			background-color: #C2DB39;
+		}
+		&:nth-child(6) .box {
+			background-color: #DB9839;
+		}
+		&:nth-child(7) .box {
+			background-color: #555555;
+		}
+		&:nth-child(8) .box {
+			background-color: #DB39BB;
+		}
+	}
+
+	.dashboard-item{
+		position: relative;
+
+		.title {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(lighten($color-black, 85), .8);
+			padding: 5px 1rem;
+			margin: 0;
+
+			a{
+
+			}
+		}
+		.box {
+			height: calc(15rem + 4rem);
+			padding-top: 4rem;
+			display: flex;
+			align-items: center;
+
+			span{
+				font-size: 6rem;
+				color: $color-white;
+
+				&:nth-child(2) {
+					align-self: flex-end;
+				}
+			}
+
+
+		}
+	}
+
+	.btn-group{
+		a{
+			box-shadow: none !important;
+		}
+	}
+}
+
+.personal-informations {
+	table{
+		tbody{
+			width: 100%;
+		}
+		td{
+			font-size: 1.6rem;
+
+			&:first-child {
+				width: 20rem;
+			}
+		}
+	}
+}
+
+.educational-qualification{
+	td, th{
+		font-size: 1.6rem;
+	}
+}
+
+.update-profile{
+	.tab-pane{
+		a{
+			&:hover {
+				color: $color-white !important;
+				background-color: lighten($color-theme, 15) !important;
+			}
+			&.active{
+				color: $color-white !important;
+				background-color: lighten($color-theme, 30) !important;
+
+			}
+		}
+	}
+
+	.tab-container{
+		.tab-content {
+		}
+	}
+
+	form{
+		.profile-img-upload{
+			display: block;
+		}
+	}
+
+	.profile-img{
+		position: relative;
+
+		div{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba($color-black, .5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 3rem;
+			opacity: 0;
+			transition: .3s;
+
+			i.plus-icon{
+				background-color: $color-white;
+				border-radius: 50%;
+				height: 5rem;
+				width: 5rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
+		&:hover{
+			& > div{
+				opacity: 1;
+			}
+		}
+	}
+}

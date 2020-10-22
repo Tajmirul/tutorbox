@@ -15,7 +15,23 @@ $(document).ready(function () {
     });
 
     // counter js --------------------------------------------------
-    // $('.counter').counterUp();
+
+    if (document.getElementById('counter-section')) {
+        var waypoint = new Waypoint({
+            element: document.getElementById('counter-section'),
+                handler: function() {
+                    notify('Basic waypoint triggered')
+                }
+        });
+    };
+    
+    $('.counter').counterUp({
+        delay: 300,
+        time: 2000
+    });
+
+    // select2 js ---------------------------------------------------
+    $('.select2').select2();
 
 
     // my code ----------------------------------------------------------------------
@@ -47,30 +63,63 @@ $(document).ready(function () {
         });
     });
 
+    $('#select-gander').click(function () {
+        $(this).siblings('.gander-inputs').toggleClass('visible');
+    });
 
-    // image resiger --------------------------
+    $('.gander-inputs input').click(function () {
+        var button = $('#select-gander');
+        button.click();
+        button.html($('.gander-inputs input:checked').val());
+    });
 
-    // 1. get width and heigth of first image
-    // var images, heigth, width; 
+    // close contact popup
+    var contactBtns = $('.contact-button');
 
-    // images = $('.tutor-image');
+    $.each(contactBtns, function(index, item) {
+        $(item).click(function (event) {
 
-    // function getHeightAndWidth() {
-    //     height = images[0].height;
-    //     width = images[0].width;
-    // };
+            $('.overlay').fadeIn();
+            $('.contact-popup').fadeIn();
 
-    // 2. check all images if there height and width match with first one
-    // $.each(images, function(index, item) {
-    //     if ($(item).height !== height) {
-    //         $(item).height = height;
-    //     } else if ($(item).width !== width){
-    //         $(item).width = width;
-    //     }
-    // });
+            event.preventDefault();
+        });
+    });
+    $('.close-contact-popup-icon').click(function () {
+        $('.overlay').fadeOut();
+        $('.contact-popup').fadeOut();
+    });
 
-    // 3. if dose not match than change its height and weight as the first one
+    // bootstrap tooltip ---------------------
+    $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'hover',
+    });
 
 
+    // custom tabs -----------------------------
+    var tabPane = $('.tab-pane');
+    var tabContainer = $('.tab-container');
+
+    tabPane.children('a').click(function (event) {
+
+        var ID = $(this).attr('href');
+
+        tabPane.children('a').removeClass('active');
+        $(this).addClass('active');
+
+        tabContainer.children('.tab-content').stop().fadeOut(400, function() {
+            $(ID).stop().fadeIn(600);
+        })
+
+        event.preventDefault();
+    });
+
+    // 
+    $('.profile-img .plus-icon').click(function() {
+        $('.profile-img-upload').click();
+    });
+
+
+    // preloader ------------------------
     $('.preloader').fadeOut(400);
 });

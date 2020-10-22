@@ -292,6 +292,16 @@ ul.main-ul {
 .section-name h2 .text-theme {
   border-bottom: 4px solid #AECE61; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 4;
+  display: none; }
+
 footer {
   background-color: #092746; }
   footer * {
@@ -314,7 +324,8 @@ footer {
 
 .button {
   font-family: 'Sanchez', serif;
-  display: inline-block; }
+  display: inline-block;
+  border: none; }
   .button-type-1 {
     background-color: #AECE61;
     color: #fff !important;
@@ -322,8 +333,7 @@ footer {
     padding: 1.5rem 3rem;
     position: relative;
     z-index: 2;
-    text-align: center;
-    overflow: hidden; }
+    text-align: center; }
     .button-type-1::after {
       content: '';
       position: absolute;
@@ -344,6 +354,14 @@ footer {
     padding: 3px 1.2rem; }
     .button-type-2:hover {
       background-color: #0e253b; }
+  .button-type-3 {
+    padding: 3px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000; }
+    .button-type-3:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+  .button:focus {
+    outline: none; }
 
 .banner {
   position: relative; }
@@ -484,6 +502,171 @@ nav {
   .all-counters * {
     color: #fff; }
 
+.registration header nav {
+  background-color: #183E64; }
+
+.registration main section {
+  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.4); }
+
+.registration .box-container .icon {
+  margin-bottom: 1rem;
+  height: 4rem;
+  width: 4rem;
+  background: #fff;
+  border-radius: 50%; }
+
+.registration form.registration_form img {
+  width: 100%;
+  max-width: 18rem;
+  cursor: pointer; }
+
+.registration form.registration_form #select-gander {
+  position: relative;
+  z-index: 1; }
+
+.registration form.registration_form .gander-inputs {
+  display: inline-block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-5rem);
+  transition: .3s; }
+  .registration form.registration_form .gander-inputs.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0); }
+
+.login form.login_form {
+  width: 100%;
+  max-width: 40rem;
+  margin: auto; }
+
+.clip-arrow {
+  background: #092746; }
+
+.select2 {
+  width: 100% !important;
+  margin: .5rem 0; }
+  .select2 * {
+    font-size: 1.6rem; }
+
+.select2-dropdown {
+  font-size: 1.6rem; }
+
+.contact-popup {
+  width: 100%;
+  max-width: 50rem;
+  background: #fff;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  display: none; }
+  .contact-popup .close-contact-popup-icon {
+    cursor: pointer; }
+
+.user-dashboard {
+  background-color: #EFF4F8; }
+  .user-dashboard .notification {
+    background-color: #fff; }
+
+.dashboard-container .row > div:nth-child(1) .box {
+  background-color: #4D9CDF; }
+
+.dashboard-container .row > div:nth-child(2) .box {
+  background-color: #9139DB; }
+
+.dashboard-container .row > div:nth-child(3) .box {
+  background-color: #DDDF4D; }
+
+.dashboard-container .row > div:nth-child(4) .box {
+  background-color: #DB6739; }
+
+.dashboard-container .row > div:nth-child(5) .box {
+  background-color: #C2DB39; }
+
+.dashboard-container .row > div:nth-child(6) .box {
+  background-color: #DB9839; }
+
+.dashboard-container .row > div:nth-child(7) .box {
+  background-color: #555555; }
+
+.dashboard-container .row > div:nth-child(8) .box {
+  background-color: #DB39BB; }
+
+.dashboard-container .dashboard-item {
+  position: relative; }
+  .dashboard-container .dashboard-item .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(217, 217, 217, 0.8);
+    padding: 5px 1rem;
+    margin: 0; }
+  .dashboard-container .dashboard-item .box {
+    height: calc(15rem + 4rem);
+    padding-top: 4rem;
+    display: flex;
+    align-items: center; }
+    .dashboard-container .dashboard-item .box span {
+      font-size: 6rem;
+      color: #fff; }
+      .dashboard-container .dashboard-item .box span:nth-child(2) {
+        align-self: flex-end; }
+
+.dashboard-container .btn-group a {
+  box-shadow: none !important; }
+
+.personal-informations table tbody {
+  width: 100%; }
+
+.personal-informations table td {
+  font-size: 1.6rem; }
+  .personal-informations table td:first-child {
+    width: 20rem; }
+
+.educational-qualification td, .educational-qualification th {
+  font-size: 1.6rem; }
+
+.update-profile .tab-pane a:hover {
+  color: #fff !important;
+  background-color: #2764a2 !important; }
+
+.update-profile .tab-pane a.active {
+  color: #fff !important;
+  background-color: #438bd2 !important; }
+
+.update-profile form .profile-img-upload {
+  display: block; }
+
+.update-profile .profile-img {
+  position: relative; }
+  .update-profile .profile-img div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    opacity: 0;
+    transition: .3s; }
+    .update-profile .profile-img div i.plus-icon {
+      background-color: #fff;
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .update-profile .profile-img:hover > div {
+    opacity: 1; }
+
 @media (max-width: 767.98px) {
   .slider-type-2-arrows .arrows.prev {
     margin-left: -2rem; }
@@ -506,6 +689,10 @@ nav {
 @media (min-width: 768px) {
   .all-counter img {
     margin-top: -4rem; } }
+
+@media (min-width: 992px) {
+  .clip-arrow {
+    clip-path: polygon(0 0, 93% 0, 93% 35%, 100% 50%, 93% 65%, 93% 100%, 0 100%); } }
 
 @media (min-width: 1200px) {
   .all-counters img {

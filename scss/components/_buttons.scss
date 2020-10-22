@@ -1,6 +1,7 @@
 .button {
 	font-family: 'Sanchez', serif;
 	display: inline-block;
+	border: none;
 
 	&-type-1 {
 		background-color: $color-green;
@@ -10,7 +11,7 @@
 		position: relative;
 		z-index: 2;
 		text-align: center;
-		overflow: hidden;
+		// overflow: hidden;
 
 		&::after{
 			content: '';
@@ -42,7 +43,21 @@
 		}
 	}
 
+	&-type-3 {
+		padding: 3px 6px;
+		border: 1px solid rgba($color-black, .1);
+		color: $color-black;
+
+		&:hover {
+			background-color: rgba($color-black, .1);
+		}
+	}
+
 	&-link {
 
+	}
+
+	&:focus {
+		outline: none;
 	}
 }
