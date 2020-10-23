@@ -14,8 +14,7 @@ $(document).ready(function () {
         autoplay: true,
     });
 
-    // counter js --------------------------------------------------
-
+    // counter js ---------------------
     if (document.getElementById('counter-section')) {
         var waypoint = new Waypoint({
             element: document.getElementById('counter-section'),
@@ -30,7 +29,7 @@ $(document).ready(function () {
         time: 2000
     });
 
-    // select2 js ---------------------------------------------------
+    // select2 js --------------------
     $('.select2').select2();
 
 
@@ -63,17 +62,19 @@ $(document).ready(function () {
         });
     });
 
-    $('#select-gander').click(function () {
+    // select gander ---------------------------------
+    $('#select-gander, .select-gander').click(function () {
         $(this).siblings('.gander-inputs').toggleClass('visible');
     });
 
     $('.gander-inputs input').click(function () {
-        var button = $('#select-gander');
+        var button = $(this).parents().children('#select-gander, .select-gander');
+
         button.click();
-        button.html($('.gander-inputs input:checked').val());
+        button.html(button.siblings().children().children('.gander-inputs input:checked').val());
     });
 
-    // close contact popup
+    // open contact popup
     var contactBtns = $('.contact-button');
 
     $.each(contactBtns, function(index, item) {
@@ -85,6 +86,7 @@ $(document).ready(function () {
             event.preventDefault();
         });
     });
+    // close contact popup
     $('.close-contact-popup-icon').click(function () {
         $('.overlay').fadeOut();
         $('.contact-popup').fadeOut();
@@ -107,9 +109,8 @@ $(document).ready(function () {
         tabPane.children('a').removeClass('active');
         $(this).addClass('active');
 
-        tabContainer.children('.tab-content').stop().fadeOut(400, function() {
-            $(ID).stop().fadeIn(600);
-        });
+        tabContainer.children('.tab-content').stop().hide()
+            $(ID).stop().show();
 
         event.preventDefault();
     });
@@ -122,6 +123,19 @@ $(document).ready(function () {
 
     });
 
+    // navigation-with-dropdown -----------------------------
+    $('.navigation-with-dropdown i').click(function(event) {
+        $(this).toggleClass('icofont-plus icofont-minus');
+        $(this).siblings('ul').stop().slideToggle();        
+    });
+
+
+    // custom accordion
+    $('.q-and-a-section .tab-content > a').click(function (e) {
+        $(this).next().stop().slideToggle(200);
+
+        e.preventDefault();
+    });
 
 
     // preloader ------------------------

@@ -52,6 +52,9 @@
     .clip-arrow{
 	    clip-path: polygon(0 0, 93% 0, 93% 35%, 100% 50%, 93% 65%, 93% 100%, 0 100%);
 	}
+	.container{
+		max-width: 1000px;
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -61,6 +64,9 @@
 			position: relative;
 			transform: translateY(-20%);
 		}
+	}
+	.container{
+		max-width: 1170px;
 	}
     
 }

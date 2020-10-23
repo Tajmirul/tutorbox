@@ -138,3 +138,49 @@ ul.main-ul{
     z-index: 4;
     display: none;
 }
+
+// custom tabs -------------------------------
+.tab-pane{
+    a{
+        color: $color-white;
+        &:hover {
+            background-color: lighten($color-theme, 15) !important;
+        }
+        &.active{
+            background-color: $color-green !important;
+
+        }
+    }
+}
+
+.tab-container{
+    position: relative;
+
+    .tab-content {
+        display: none;
+
+        &:first-child{
+            display: block;
+        }
+    }
+}
+
+.navigation-with-dropdown{
+    li{
+        i{
+            cursor: pointer;
+        }
+
+        ul{
+            display: none;
+            background-color: darken($color-white, 3);
+
+            li{
+                background-color: transparent;
+                ul{
+                    background-color: darken($color-white, 6);
+                }
+            }
+        }
+    }
+}

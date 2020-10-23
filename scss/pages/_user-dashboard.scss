@@ -99,31 +99,6 @@
 }
 
 .update-profile{
-	.tab-pane{
-		a{
-			&:hover {
-				color: $color-white !important;
-				background-color: lighten($color-theme, 15) !important;
-			}
-			&.active{
-				color: $color-white !important;
-				background-color: lighten($color-theme, 30) !important;
-
-			}
-		}
-	}
-
-	.tab-container{
-		position: relative;
-
-		.tab-content {
-			display: none;
-
-			&:first-child{
-				display: block;
-			}
-		}
-	}
 
 	form{
 		.profile-img-upload{
