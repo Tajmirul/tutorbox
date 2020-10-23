@@ -709,9 +709,10 @@ nav {
 
 .q-and-a-section .tab-container .tab-content > a {
   padding: 1rem 2rem;
-  background-color: #AECE61;
+  background-color: #183E64;
   display: block;
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+  color: #fff !important; }
   .q-and-a-section .tab-container .tab-content > a:hover, .q-and-a-section .tab-container .tab-content > a:focus {
     text-decoration: underline; }
   .q-and-a-section .tab-container .tab-content > a:first-child {

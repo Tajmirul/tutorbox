@@ -11,9 +11,10 @@ a{
 		.tab-content {
 			& > a {
 				padding: 1rem 2rem;
-				background-color: $color-green;
+				background-color: $color-theme;
 				display: block;
 				margin-bottom: 2px;
+				color: $color-white !important;
 
 				&:hover, &:focus{
 					text-decoration: underline;
