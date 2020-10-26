@@ -80,8 +80,33 @@ $(document).ready(function () {
     $.each(contactBtns, function(index, item) {
         $(item).click(function (event) {
 
-            $('.overlay').fadeIn();
-            $('.contact-popup').fadeIn();
+            function getEmptyField () {
+                var formChild = $('.contact-popup form').children();
+
+                $.each(formChild, function(index, item) {
+                    var value = $(item).val();
+                    if (!value) {
+                        item.focus();
+
+                        return false;
+                    }
+                });
+
+            };
+
+            $('.overlay, .contact-popup').fadeIn();
+
+            getEmptyField();
+
+            // var isNameEmpty = $('.contact-popup form input:first-child').val();
+            
+            // if (!isNameEmpty) {
+            //     $('.contact-popup form input:first-child').focus();
+            // } else {
+            //     $('.contact-popup form input:first-child').next().focus();
+            // };
+
+            
 
             event.preventDefault();
         });
@@ -136,6 +161,9 @@ $(document).ready(function () {
 
         e.preventDefault();
     });
+
+    // auto focus ----------------
+    $('.focused').focus();
 
 
     // preloader ------------------------

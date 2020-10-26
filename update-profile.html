@@ -50,7 +50,7 @@
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="index.html">HOME</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="find-a-tutor.html">FIND A TUTOR</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="tution-job.html">TUTION JOB</a></li>
-                        <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="request-for-a-tutor.html">REQUEST FOR A TUTOR</a></li>
+                        <!-- <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="request-for-a-tutor.html">REQUEST FOR A TUTOR</a></li> -->
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="registration.html">REGISTER</a></li>
                         <li class="d-inline-block"><a class="d-block text-white d-block fz-small font-sanchez px-4 py-4" href="login.html">LOG IN</a></li>
                     </ul>
@@ -63,7 +63,7 @@
                     <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="index.html">HOME <span class="sr-only">(current)</span></a></li>
                     <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="find-a-tutor.html">FIND A TUTOR</a></li>
                     <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="tution-job.html">TUTION JOB</a></li>
-                    <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="request-for-a-tutor.html">REQUEST FOR A TUTOR</a></li>
+                    <!-- <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="request-for-a-tutor.html">REQUEST FOR A TUTOR</a></li> -->
                     <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="registration.html">REGISTER</a></li>
                     <li><a class="d-block text-white fz-normal font-sanchez px-4 py-4" href="login.html">LOG IN</a></li>
                 </ul>
@@ -298,7 +298,20 @@
                                              <h3 class="mb-5">Tution Informations - </h3>
                                              <form action="" method="POST">
                                                  <div class="row">
-                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Select provide tuition districts :</p></div>
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Provide tuition division :</p></div>
+                                                     <div class="col-md-8">
+                                                         <select name="division" class="select2">
+                                                            <option value="">Select Division</option>
+                                                            <option value="">Dhaka</option>
+                                                            <option value="">Sylhet</option>
+                                                            <option value="">Barishal </option>
+                                                            <option value="">Mymensingh </option>
+                                                         </select>
+                                                     </div>
+                                                 </div>
+                                                 <!-- end of row -->
+                                                 <div class="row">
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Select provide tuition district :</p></div>
                                                      <div class="col-md-8">
                                                          <select name="district" class="select2">
                                                             <option value="">Select District</option>
@@ -311,7 +324,7 @@
                                                  </div>
                                                  <!-- end of row -->
                                                  <div class="row">
-                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Preferred Area for tuition (You can pick 10 highest):</p></div>
+                                                     <div class="col-lg-4"><p class="mb-0 fz-normal">Preferred Thana for tuition (You can pick 10 highest):</p></div>
                                                      <div class="col-md-8">
                                                          <select name="district" name="states[]" multiple="multiple" class="select2">
                                                             <option value="">Dhaka</option>
