@@ -346,6 +346,8 @@ footer {
       border-color: #AECE61; }
       footer .social-links a:hover i {
         color: #092746; }
+  footer .footer-copyright {
+    background-color: #061a2f; }
 
 .button {
   font-family: 'Sanchez', serif;

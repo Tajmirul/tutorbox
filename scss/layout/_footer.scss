@@ -26,5 +26,9 @@ footer{
     			}
     		}
     	}
-    }
+	}
+	
+	.footer-copyright{
+		background-color: darken($color-theme-dark, 5);
+	}
 }
