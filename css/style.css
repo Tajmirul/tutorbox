@@ -482,51 +482,12 @@ nav {
       color: #d9d9d9; }
 
 .tutor {
-  overflow: hidden;
-  background-color: #F6F8FA;
-  height: calc(100% - 8rem);
-  position: relative; }
-  .tutor .fee {
-    text-align: left;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10rem;
-    height: 10rem;
-    clip-path: polygon(0 0, 10rem 0, 0 10rem);
-    background-color: #AECE61;
-    padding: 1rem;
-    color: #fff; }
-  .tutor-name {
-    padding: 3rem 0;
-    transition: .3s;
-    background-color: #F6F8FA; }
-  .tutor::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 5px;
-    height: 0;
-    background-color: #AECE61;
-    transition: .7s;
-    z-index: 2; }
-  .tutor::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 5px;
-    background-color: #AECE61;
-    transition: .7s;
-    z-index: 2; }
-  .tutor:hover .tutor-name {
-    transform: translateY(-8rem); }
-  .tutor:hover::after {
-    height: 100%; }
-  .tutor:hover::before {
-    width: 100%; }
+  background-color: #fafafa;
+  padding: 2rem;
+  border: 1px solid rgba(24, 62, 100, 0.1);
+  border-radius: 5px; }
+  .tutor:not(:last-child) {
+    margin-bottom: 1.5rem; }
 
 .tution-job {
   position: relative; }

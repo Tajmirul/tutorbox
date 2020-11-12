@@ -6,12 +6,10 @@
 	&-type-1 {
 		background-color: $color-green;
 		color: $color-white !important;
-		// border-radius: 50px;
 		padding: 1.5rem 3rem;
 		position: relative;
 		z-index: 2;
 		text-align: center;
-		// overflow: hidden;
 
 		&::after{
 			content: '';
@@ -20,11 +18,9 @@
 			left: -1px;
 			bottom: 0;
 			width: 0;
-			// border-radius: 50px;
 			background-color: $color-theme;
 			z-index: -1;
 			transition: .2s;
-			// margin: 0 -1px;
 		}
 
 		&:hover::after{

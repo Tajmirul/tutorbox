@@ -1,62 +1,11 @@
+
 .tutor{
-	overflow: hidden;
-	background-color: #F6F8FA;
-	height: calc(100% - 8rem);
-	position: relative;
+	background-color: darken($color-white, 2);
+	padding: 2rem;
+	border: 1px solid rgba($color-theme, .1);
+	border-radius: 5px;
 
-	.fee{
-		text-align: left;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 10rem;
-		height: 10rem;
-		clip-path: polygon(0 0, 10rem 0, 0 10rem);
-		background-color: $color-green;
-		padding: 1rem;
-		color: $color-white;
-	}
-
-	&-name{
-		padding: 3rem 0;
-		transition: .3s;
-		background-color: #F6F8FA;
-	}
-
-	&::after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 5px;
-		height: 0;
-		background-color: $color-green;
-		transition: .7s;
-		z-index: 2;
-	}
-	&::before{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 0;
-		height: 5px;
-		background-color: $color-green;
-		transition: .7s;
-		z-index: 2;
-	}
-
-	&:hover {
-		.tutor-name {
-			transform: translateY(-8rem);
-		}
-
-		&::after{
-			height: 100%;
-		}
-
-		&::before{
-			width: 100%;
-		}
+	&:not(:last-child) {
+		margin-bottom: 1.5rem;
 	}
 }
